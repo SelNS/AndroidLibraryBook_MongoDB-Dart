@@ -1,15 +1,14 @@
 const express = require('express');
 const app = express();
 // const mongoose = require('mongoose');
-// const mongoUrl = 'mongodb+srv://selsans:MCsel5419@cluster01.kvuaqki.mongodb.net/library';
-// const mongoUrl = 'mongoose+srv://selsans:MCsel5419@cluster1.fha6i8e.mongoose.net/library';
+// const mongoUrl = 'your mongo uri';
 const cors = require('cors');
 const path = require('path');
 
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-// const uri = "mongodb+srv://selsans:selsans@cluster01.kvuaqki.mongodb.net/?retryWrites=true&w=majority";
-const uri = "mongodb+srv://selsans:MCsel5419@cluster01.kvuaqki.mongodb.net/library";
+
+const uri = "your mongo uri";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
